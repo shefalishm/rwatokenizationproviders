@@ -173,9 +173,8 @@ export default function TokenizationPage() {
   const expandedData = expandedVendor ? VENDORS.find(v => v.name === expandedVendor) : null;
 
   return (
-    <div style={{ "--font-display": "'Clash Display', 'Switzer', system-ui, sans-serif", "--font-body": "'Switzer', 'General Sans', system-ui, sans-serif", "--font-mono": "'JetBrains Mono', monospace", "--blue": "#1a73e8", "--blue-light": "#4FA8D8", "--navy": "#0b1526", "--navy-mid": "#0f1d30", "--slate": "#64748b", fontFamily: "var(--font-body)", background: "#fafbfd", color: "#0f172a", minHeight: "100vh" }}>
-      <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&f[]=switzer@400,500,600,700&f[]=general-sans@400,500,600&display=swap" rel="stylesheet" />
-      <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+    <div style={{ "--font-display": "'Inter', 'General Sans', system-ui, sans-serif", "--font-body": "'Inter', 'General Sans', system-ui, sans-serif", "--font-mono": "'JetBrains Mono', monospace", "--blue": "#1a73e8", "--blue-light": "#4FA8D8", "--navy": "#0b1526", "--navy-mid": "#0f1d30", "--slate": "#64748b", fontFamily: "var(--font-body)", background: "#fafbfd", color: "#0f172a", minHeight: "100vh" }}>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
 
       <style>{`
         @keyframes heroGlow { 0%,100% { opacity: 0.4; transform: scale(1); } 50% { opacity: 0.7; transform: scale(1.1); } }
@@ -215,7 +214,7 @@ export default function TokenizationPage() {
               <div style={{ display: "inline-block", marginBottom: "20px", padding: "8px 20px", background: "#fff", border: "1px solid #1a73e820", borderRadius: "100px", boxShadow: "0 2px 12px rgba(26,115,232,0.06)" }}>
                 <span style={{ fontSize: "10px", fontWeight: 800, color: "#1a73e8", textTransform: "uppercase", letterSpacing: "3px" }}>◈ Category Deep Dive</span>
               </div>
-              <h1 style={{ fontSize: "clamp(40px, 7vw, 80px)", fontWeight: 700, lineHeight: 0.95, margin: "0 0 20px", fontFamily: "var(--font-display)", letterSpacing: "-0.04em" }}>
+              <h1 style={{ fontSize: "clamp(32px, 5vw, 56px)", fontWeight: 800, lineHeight: 1.05, margin: "0 0 20px", fontFamily: "var(--font-display)", letterSpacing: "-0.03em" }}>
                 <span style={{ color: "#0f172a" }}>RWA Tokenization</span><br />
                 <span style={{ color: "#1a73e8" }}>Solution Providers</span>
               </h1>
@@ -233,7 +232,7 @@ export default function TokenizationPage() {
                 { label: "Chains", val: 15, suf: "+" },
               ].map((s, i) => (
                 <div key={i} style={{ background: "#fff", padding: "24px 20px" }}>
-                  <div style={{ fontSize: "30px", fontWeight: 700, color: "#1a73e8", fontFamily: "var(--font-display)", letterSpacing: "-0.03em", lineHeight: 1 }}>
+                  <div style={{ fontSize: "26px", fontWeight: 800, color: "#1a73e8", fontFamily: "var(--font-display)", letterSpacing: "-0.03em", lineHeight: 1 }}>
                     <Counter end={s.val} suffix={s.suf} prefix={s.pre || ""} />
                   </div>
                   <div style={{ fontSize: "9px", color: "#94a3b8", textTransform: "uppercase", letterSpacing: "2.5px", fontWeight: 800, marginTop: "6px" }}>{s.label}</div>
@@ -261,7 +260,7 @@ export default function TokenizationPage() {
           <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", marginBottom: "32px", flexWrap: "wrap", gap: "12px" }}>
             <div>
               <div style={{ fontSize: "9px", color: "var(--blue)", textTransform: "uppercase", letterSpacing: "4px", fontWeight: 800, marginBottom: "8px" }}>Coverage</div>
-              <h2 style={{ fontSize: "32px", fontWeight: 700, margin: 0, letterSpacing: "-0.03em", fontFamily: "var(--font-display)" }}>Asset Classes Tokenized</h2>
+              <h2 style={{ fontSize: "26px", fontWeight: 800, margin: 0, letterSpacing: "-0.02em", fontFamily: "var(--font-display)" }}>Asset Classes Tokenized</h2>
             </div>
             <span style={{ fontSize: "11px", color: "var(--slate)", fontFamily: "var(--font-mono)" }}>{ASSET_CLASSES.length} categories</span>
           </div>
@@ -478,7 +477,7 @@ export default function TokenizationPage() {
             <div style={{ position: "absolute", inset: 0, backgroundImage: "linear-gradient(rgba(26,115,232,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(26,115,232,0.03) 1px, transparent 1px)", backgroundSize: "48px 48px", pointerEvents: "none" }} />
             <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%, -50%)", width: "600px", height: "600px", borderRadius: "50%", background: "radial-gradient(circle, rgba(26,115,232,0.05), transparent 60%)", pointerEvents: "none" }} />
             <div style={{ position: "relative" }}>
-              <h2 style={{ fontSize: "clamp(24px, 5vw, 42px)", fontWeight: 700, color: "#0f172a", margin: "0 0 12px", letterSpacing: "-0.03em", fontFamily: "var(--font-display)" }}>Get Your Platform Listed</h2>
+              <h2 style={{ fontSize: "clamp(22px, 4vw, 34px)", fontWeight: 800, color: "#0f172a", margin: "0 0 12px", letterSpacing: "-0.02em", fontFamily: "var(--font-display)" }}>Get Your Platform Listed</h2>
               <p style={{ color: "#475569", fontSize: "15px", maxWidth: "460px", margin: "0 auto 32px", lineHeight: 1.6 }}>
                 Join {VENDORS.length} tokenization providers in the most comprehensive RWA vendor directory. Premium and featured placements available.
               </p>
